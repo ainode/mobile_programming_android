@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    >
+
+	<TextView
+		android:text="Username:"
+		android:id="@+id/userLabel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dp" 
+	/>
+
+	<EditText 
+		android:id="@+id/username"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@id/userLabel"
+		android:layout_toRightOf="@id/userLabel"
+		android:layout_marginRight="5dp"
+	/>
+
+	<EditText
+		android:id="@+id/password"
+		android:inputType="textPassword"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignLeft="@id/username"
+		android:layout_below="@id/username"
+		android:layout_marginRight="5dp"
+	/>
+
+	<TextView
+		android:text="Password:"
+		android:id="@+id/passLabel"
+		android:layout_width = "wrap_content"
+		android:layout_height= "wrap_content"
+		android:layout_alignRight="@id/userLabel"
+		android:layout_below="@id/userLabel"
+		android:layout_alignBaseline="@id/password"
+		android:layout_margin="5dp"
+	/>
+
+	<Button
+		android:text="Authenticate"
+		android:id="@+id/auth"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/password"
+		android:layout_alignRight="@id/password"
+	/>
+
+	<Button
+		android:text="Save Login"
+		android:id="@+id/save"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/password"
+		android:layout_alignLeft="@id/passLabel"
+	/>
+
+</RelativeLayout>
